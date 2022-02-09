@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/react_ddd_pattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="Add modules &amp; prepare eslint">
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/headerItems.lookup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseWrapper/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/layout/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/constant/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/constant/layout.constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/constant/url.constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/router/app.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/ui/AppUI/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/router/auth.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/ui/AuthLoginUI/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +40,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
   </component>
   <component name="ProjectId" id="24on0t4ocmapAq5yh0VD8uUojUD" />
   <component name="ProjectLevelVcsManager">
@@ -48,15 +65,31 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Projects\Explore\react_ddd_pattern\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\auth" />
+      <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app\components\base" />
+      <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="yarn test" />
+      <command value="yarn add" />
+      <command value="yarn add yarn add styled-components" />
+      <command value="yarn add styled-components" />
+      <command value="yarn install styled-components" />
       <command value="yarn start" />
     </option>
   </component>
@@ -68,8 +101,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644305587096</updated>
-      <workItem from="1644305589289" duration="1362000" />
+      <workItem from="1644305589289" duration="4432000" />
+      <workItem from="1644374051253" duration="246000" />
+      <workItem from="1644374320600" duration="7535000" />
     </task>
+    <task id="LOCAL-00001" summary="Add modules &amp; prepare eslint">
+      <created>1644307151462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644307151462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add modules &amp; prepare eslint">
+      <created>1644307211808</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644307211808</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +135,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add modules &amp; prepare eslint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add modules &amp; prepare eslint" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
