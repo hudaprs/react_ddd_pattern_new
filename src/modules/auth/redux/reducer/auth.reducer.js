@@ -2,13 +2,13 @@
 import { persistReducer } from 'redux-persist'
 
 // Utils
-import { reduxUtilsPersistConfig } from 'modules/core/utils/redux.utils'
+import { reduxUtilsPersistConfig } from 'modules/app/utils'
 
 // Action
 import { AUTH_SET_LOADING } from '../action'
 
 // Constant
-import { LOCAL_STORAGE_PERSISTED_AUTH } from 'modules/core/constant'
+import { LOCAL_STORAGE_PERSISTED_AUTH } from 'modules/app/constant'
 
 const initialState = {
   authIsLoading: false,

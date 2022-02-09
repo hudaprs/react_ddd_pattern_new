@@ -1,0 +1,15 @@
+{
+  "auth": {
+    "login": {
+      "login": "Masuk",
+      "form": {
+        "email": "Email",
+        "password": "Password"
+      },
+      "formPlaceholder": {
+        "email": "Masukkan Email",
+        "password": "Masukkan Kata Sandi"
+      }
+    }
+  }
+}

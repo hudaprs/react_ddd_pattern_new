@@ -1,0 +1,15 @@
+{
+  "auth": {
+    "login": {
+      "login": "Login",
+      "form": {
+        "email": "Email",
+        "password": "Kata Sandi"
+      },
+      "formPlaceholder": {
+        "email": "Enter Email",
+        "password": "Enter Password"
+      }
+    }
+  }
+}

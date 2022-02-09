@@ -2,13 +2,13 @@
 import { persistReducer } from 'redux-persist'
 
 // Utils
-import { reduxUtilsPersistConfig } from 'modules/core/utils/redux.utils'
+import { reduxUtilsPersistConfig } from 'modules/app/utils/redux.utils'
 
 // Action
 import { LOCALIZATION_SET_LOADING, LOCALIZATION_SET_LANGUAGE } from '../action'
 
 // Constant
-import { LOCAL_STORAGE_PERSISTED_LOCALIZATION } from 'modules/core/constant'
+import { LOCAL_STORAGE_PERSISTED_LOCALIZATION } from 'modules/app/constant'
 
 const initialState = {
   localizationIsLoading: false,

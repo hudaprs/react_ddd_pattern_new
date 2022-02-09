@@ -1,5 +1,9 @@
 # React DDD Pattern With Redux Saga
 
+### Form Validation
+
+On Progress
+
 ### Rules
 
 On Progress

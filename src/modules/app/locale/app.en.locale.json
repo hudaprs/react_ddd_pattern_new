@@ -1,6 +1,11 @@
 {
   "app": {
     "app": "App",
-    "welcome": "Welcome To React DDD Pattern With Redux Saga"
+    "welcome": "Welcome To React DDD Pattern With Redux Saga",
+    "validations": {
+      "required": "is required",
+      "email": "invalid",
+      "lowercase": "must be lowercase"
+    }
   }
 }

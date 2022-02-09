@@ -2,31 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="Adding localization">
-      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.staging" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseContainer/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseContainer/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/locale/app.en.locale.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/locale/app.id.locale.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/localization/hook/use-localization.hook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/localization/redux/action/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/localization/redux/reducer/localization.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/localization/redux/saga/localization.saga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/i18n/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/form/FormInput/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/form/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/hooks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/hooks/use-react-hook-form.hook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/utils/common.utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/locale/auth.en.locale.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/locale/auth.id.locale.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/components/base/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/base/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/app/ui/AppUI/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/ui/AppUI/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/constant/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/constant/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/locale/app.en.locale.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/locale/app.en.locale.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/locale/app.id.locale.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/locale/app.id.locale.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/auth/redux/reducer/auth.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/redux/reducer/auth.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/ui/AuthLoginUI/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/ui/AuthLoginUI/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/constant/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/constant/localStorage.constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/utils/redux.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/utils/redux.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/localization/redux/reducer/localization.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/localization/redux/reducer/localization.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +71,8 @@
       <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app\utils" />
+      <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app\constant" />
       <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\auth" />
       <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app\components\base" />
       <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app" />
@@ -113,7 +111,7 @@
       <workItem from="1644305589289" duration="4432000" />
       <workItem from="1644374051253" duration="246000" />
       <workItem from="1644374320600" duration="7839000" />
-      <workItem from="1644388359148" duration="7429000" />
+      <workItem from="1644388359148" duration="16137000" />
     </task>
     <task id="LOCAL-00001" summary="Add modules &amp; prepare eslint">
       <created>1644307151462</created>
@@ -143,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644391603481</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding localization">
+      <created>1644395915595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644395915595</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

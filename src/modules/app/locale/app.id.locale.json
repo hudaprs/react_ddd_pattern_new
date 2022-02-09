@@ -1,6 +1,11 @@
 {
   "app": {
     "app": "Aplikasi",
-    "welcome": "Selamat Datang Di React DDD Pattern Dengan Redux Saga"
+    "welcome": "Selamat Datang Di React DDD Pattern Dengan Redux Saga",
+    "validations": {
+      "required": "harus diisi",
+      "email": "tidak valid",
+      "lowercase": "harus menggunakan huruf kecil"
+    }
   }
 }
