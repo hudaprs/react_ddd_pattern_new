@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="Adding redux, redux saga &amp; persist">
-      <change afterPath="$PROJECT_DIR$/src/modules/app/redux/action/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/redux/reducer/app.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/redux/saga/app.saga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/redux/action/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/redux/reducer/auth.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/core/constant/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/core/utils/redux.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/redux/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/redux/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/redux/sagas/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="Adding localization">
+      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.staging" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseContainer/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseContainer/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/locale/app.en.locale.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/locale/app.id.locale.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/localization/hook/use-localization.hook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/localization/redux/action/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/localization/redux/reducer/localization.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/localization/redux/saga/localization.saga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/i18n/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/components/base/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/base/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/app/ui/AppUI/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/app/ui/AppUI/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/redux/reducer/auth.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/redux/reducer/auth.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -65,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Explore\react_ddd_pattern" />
       <recent name="C:\Projects\Explore\react_ddd_pattern\src\modules\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -106,7 +113,7 @@
       <workItem from="1644305589289" duration="4432000" />
       <workItem from="1644374051253" duration="246000" />
       <workItem from="1644374320600" duration="7839000" />
-      <workItem from="1644388359148" duration="3210000" />
+      <workItem from="1644388359148" duration="7429000" />
     </task>
     <task id="LOCAL-00001" summary="Add modules &amp; prepare eslint">
       <created>1644307151462</created>
@@ -129,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644382734509</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding redux, redux saga &amp; persist">
+      <created>1644391603481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644391603481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +165,8 @@
     <MESSAGE value="Add modules &amp; prepare eslint" />
     <MESSAGE value="Add router and Prop Types" />
     <MESSAGE value="Adding redux, redux saga &amp; persist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding redux, redux saga &amp; persist" />
+    <MESSAGE value="Adding localization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding localization" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

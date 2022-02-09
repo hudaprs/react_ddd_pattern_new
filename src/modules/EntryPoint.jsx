@@ -1,5 +1,5 @@
 // React
-import { Suspense } from 'react'
+import { useEffect, Suspense } from 'react'
 
 // React Router Dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -10,7 +10,28 @@ import { routes } from 'plugins'
 // Styles
 import { GlobalStyle } from './styles'
 
+// Custom Hook
+import { useLocalization } from 'modules/localization/hook/use-localization.hook'
+
+// React Redux
+import { useDispatch } from 'react-redux'
+
 const EntryPoint = () => {
+  // Hook
+  const dispatch = useDispatch()
+  const { localizationLanguage, LOCALIZATION_SET_LANGUAGE_REQUESTED } =
+    useLocalization()
+
+  useEffect(() => {
+    // Init the language
+    dispatch({
+      type: LOCALIZATION_SET_LANGUAGE_REQUESTED,
+      payload: localizationLanguage
+    })
+
+    // eslint-disable-next-line
+  }, [])
+
   /**
    * @description Render routes
    *

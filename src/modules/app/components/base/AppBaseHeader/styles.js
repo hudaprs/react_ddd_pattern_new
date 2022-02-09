@@ -11,7 +11,6 @@ export const StyledWrapper = styled.div`
 
 export const StyledContainer = styled.div`
   height: 100%;
-  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,10 +26,17 @@ export const StyledContainer = styled.div`
 
   ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   li {
     text-decoration: none;
     cursor: pointer;
+
+    &:first-child {
+      margin-right: 20px;
+    }
   }
 `

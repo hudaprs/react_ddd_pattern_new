@@ -1,5 +1,11 @@
+// i18n
+import { useTranslation } from 'react-i18next'
+
 const AppUI = () => {
-  return <h5>Your Main App Page!</h5>
+  // Hook
+  const { t } = useTranslation()
+
+  return <h1>{t('app.welcome')}</h1>
 }
 
 export { AppUI }

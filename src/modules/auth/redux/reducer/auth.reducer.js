@@ -11,22 +11,22 @@ import { AUTH_SET_LOADING } from '../action'
 import { LOCAL_STORAGE_PERSISTED_AUTH } from 'modules/core/constant'
 
 const initialState = {
-  auth_loading: false,
-  auth_token: '',
-  auth_authenticatedUser: {}
+  authIsLoading: false,
+  authToken: '',
+  authAuthenticatedUser: {}
 }
 
 const auth = persistReducer(
   reduxUtilsPersistConfig(LOCAL_STORAGE_PERSISTED_AUTH, [
-    'auth_token',
-    'auth_authenticatedUser'
+    'authToken',
+    'authAuthenticatedUser'
   ]),
   (state = initialState, { type, payload }) => {
     switch (type) {
       case AUTH_SET_LOADING:
         return {
           ...state,
-          auth_loading: payload
+          authIsLoading: payload
         }
       default:
         return state

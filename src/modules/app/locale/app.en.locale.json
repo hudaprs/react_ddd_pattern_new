@@ -1,0 +1,6 @@
+{
+  "app": {
+    "app": "App",
+    "welcome": "Welcome To React DDD Pattern With Redux Saga"
+  }
+}

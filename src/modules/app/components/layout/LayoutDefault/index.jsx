@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 
 // Components
-import { AppBaseHeader } from 'modules/app/components/base'
+import { AppBaseContainer, AppBaseHeader } from 'modules/app/components/base'
 
 // Styles
 import { StyledContainer } from './styles'
@@ -11,7 +11,9 @@ const LayoutDefault = ({ children }) => {
   return (
     <>
       <AppBaseHeader />
-      <StyledContainer>{children}</StyledContainer>
+      <StyledContainer>
+        <AppBaseContainer>{children}</AppBaseContainer>
+      </StyledContainer>
     </>
   )
 }
