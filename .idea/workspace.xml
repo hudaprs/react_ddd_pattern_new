@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="Add modules &amp; prepare eslint">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/headerItems.lookup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseHeader/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/AppBaseWrapper/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/base/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/layout/LayoutDefault/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/components/layout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/constant/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/constant/layout.constant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/constant/url.constant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/router/app.router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/ui/AppUI/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/app/ui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/router/auth.router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/ui/AuthLoginUI/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/ui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/routes/index.js" afterDir="false" />
+    <list default="true" id="291fe741-fa12-4837-bac7-b6c418a302f3" name="Changes" comment="Adding redux, redux saga &amp; persist">
+      <change afterPath="$PROJECT_DIR$/src/modules/app/redux/action/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/redux/reducer/app.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/app/redux/saga/app.saga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/redux/action/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/redux/reducer/auth.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/constant/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/constant/localStorage.constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/utils/redux.utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/redux/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/redux/sagas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/EntryPoint.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +83,18 @@
       <command value="yarn start" />
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,7 +105,8 @@
       <updated>1644305587096</updated>
       <workItem from="1644305589289" duration="4432000" />
       <workItem from="1644374051253" duration="246000" />
-      <workItem from="1644374320600" duration="7535000" />
+      <workItem from="1644374320600" duration="7839000" />
+      <workItem from="1644388359148" duration="3210000" />
     </task>
     <task id="LOCAL-00001" summary="Add modules &amp; prepare eslint">
       <created>1644307151462</created>
@@ -119,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644307211808</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add router and Prop Types">
+      <created>1644382734509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644382734509</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +149,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add modules &amp; prepare eslint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modules &amp; prepare eslint" />
+    <MESSAGE value="Add router and Prop Types" />
+    <MESSAGE value="Adding redux, redux saga &amp; persist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding redux, redux saga &amp; persist" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

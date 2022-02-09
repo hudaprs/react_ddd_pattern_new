@@ -4,14 +4,22 @@ import ReactDOM from 'react-dom'
 // Components
 import { EntryPoint } from 'modules/EntryPoint'
 
-// Router
-import { BrowserRouter as Router } from 'react-router-dom'
+// React Redux
+import { Provider } from 'react-redux'
+
+// Store
+import { store, persistor } from 'plugins'
+
+// Redux Persist
+import { PersistGate } from 'redux-persist/integration/react'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <EntryPoint />
-    </Router>
+    <Provider store={store}>
+      <PersistGate loading={'Loading'} persistor={persistor}>
+        <EntryPoint />
+      </PersistGate>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )

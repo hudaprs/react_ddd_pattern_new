@@ -2,7 +2,7 @@
 import { Suspense } from 'react'
 
 // React Router Dom
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Plugins
 import { routes } from 'plugins'
@@ -55,17 +55,17 @@ const EntryPoint = () => {
   }
 
   return (
-    <>
+    <Suspense fallback={<>Loading...</>}>
       {/* Styles */}
       <GlobalStyle />
 
       {/* Routes */}
-      <Suspense fallback={<>Loading...</>}>
+      <Router>
         <Routes>
           {routes.map((route, index) => renderRoutes(route, index))}
         </Routes>
-      </Suspense>
-    </>
+      </Router>
+    </Suspense>
   )
 }
 

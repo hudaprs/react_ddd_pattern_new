@@ -25,6 +25,7 @@ const loadRoutes = () => {
 
   const getActualRoutes = valueOfRoutes.filter((route) => route.path !== '*')
   const getAsteriskRoutes = valueOfRoutes.filter((route) => route.path === '*')
+
   return [...getActualRoutes, ...getAsteriskRoutes]
 }
 

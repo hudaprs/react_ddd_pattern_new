@@ -1,0 +1,1 @@
+export const APP_SET_LOADING = 'APP_SET_LOADING'
