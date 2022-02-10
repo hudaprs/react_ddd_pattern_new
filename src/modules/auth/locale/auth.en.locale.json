@@ -1,5 +1,6 @@
 {
   "auth": {
+    "notLoggedIn": "Not Logged In",
     "login": {
       "login": "Login",
       "form": {
@@ -10,6 +11,9 @@
         "email": "Enter Email",
         "password": "Enter Password"
       }
+    },
+    "logout": {
+      "logout": "Logout"
     }
   }
 }

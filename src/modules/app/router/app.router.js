@@ -5,7 +5,10 @@ import { lazily } from 'react-lazily'
 import { APP_URL, LAYOUT } from 'modules/app/constant'
 
 // Components
-import { AppBaseWrapper } from 'modules/app/components/base'
+import {
+  AppBaseWrapper,
+  AppBaseWrapperEmpty
+} from 'modules/app/components/base'
 
 // UI
 const { AppUI } = lazily(() => import('modules/app/ui'))
@@ -13,13 +16,16 @@ const { AppUI } = lazily(() => import('modules/app/ui'))
 const appRoutes = [
   {
     path: APP_URL.INDEX,
-    element: AppBaseWrapper,
-    meta: { layout: LAYOUT.DEFAULT },
+    element: AppBaseWrapperEmpty,
     children: [
       {
         path: APP_URL.INDEX,
         element: AppUI,
-        meta: { requireAuth: false }
+        meta: {
+          requireAuth: false,
+          layoutElement: AppBaseWrapper,
+          layout: LAYOUT.DEFAULT
+        }
       }
     ]
   }

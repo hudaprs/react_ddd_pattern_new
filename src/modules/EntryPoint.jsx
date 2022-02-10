@@ -1,8 +1,8 @@
 // React
-import { useEffect, Suspense } from 'react'
+import { memo, useEffect, useCallback, Suspense } from 'react'
 
 // React Router Dom
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // Plugins
 import { routes } from 'plugins'
@@ -11,25 +11,39 @@ import { routes } from 'plugins'
 import { GlobalStyle } from './styles'
 
 // Custom Hook
-import { useLocalization } from 'modules/localization/hook/use-localization.hook'
+import { useLocalization } from 'modules/localization/hooks'
+import { useAuth } from 'modules/auth/hooks'
 
-// React Redux
-import { useDispatch } from 'react-redux'
-
-const EntryPoint = () => {
+const EntryPoint = memo(() => {
   // Hook
-  const dispatch = useDispatch()
-  const { localizationLanguage, LOCALIZATION_SET_LANGUAGE_REQUESTED } =
-    useLocalization()
+  const { localizationLanguage, localizationSetLanguage } = useLocalization()
+  const { authIsAuthenticated } = useAuth()
 
   useEffect(() => {
     // Init the language
-    dispatch({
-      type: LOCALIZATION_SET_LANGUAGE_REQUESTED,
-      payload: localizationLanguage
-    })
+    localizationSetLanguage(localizationLanguage)
+  }, [])
 
-    // eslint-disable-next-line
+  /**
+   * @description Render Single Route
+   *
+   * @param {object} route
+   * @param {number} index
+   *
+   * @return {JSX.Element} JSX.Element
+   */
+  const renderSingleRoute = useCallback((route, index) => {
+    return (
+      <Route
+        path={route.path}
+        element={
+          <route.meta.layoutElement {...route.meta}>
+            <route.element {...route.meta} />
+          </route.meta.layoutElement>
+        }
+        key={index}
+      />
+    )
   }, [])
 
   /**
@@ -40,54 +54,43 @@ const EntryPoint = () => {
    *
    * @return {any} any
    */
-  const renderRoutes = (route = {}, index) => {
-    if (route?.children?.length !== 0) {
-      return (
-        <Route
-          path={route.path}
-          element={<route.element {...route.meta} />}
-          key={index}
-        >
-          {route?.children?.map((childrenRoute, childrenIndex) => {
-            // Check if route is nested, do recursive
-            if (childrenRoute?.children?.length !== 0) {
-              return renderRoutes(childrenRoute, childrenIndex)
-            } else {
-              return (
-                <Route
-                  path={childrenRoute.path}
-                  element={<childrenRoute.element {...childrenRoute.meta} />}
-                  key={childrenIndex}
-                />
-              )
-            }
-          })}
-        </Route>
-      )
-    } else {
-      return (
-        <Route
-          path={route.path}
-          element={<route.element {...route.meta} />}
-          key={index}
-        />
-      )
-    }
-  }
+  const renderRoutes = useCallback(
+    (route = {}, index) => {
+      if (route?.children?.length !== 0) {
+        return (
+          <Route path={route.path} element={<route.element />} key={index}>
+            {route?.children?.map((childrenRoute, childrenIndex) => {
+              // Check if route is nested, do recursive
+              if (childrenRoute?.children?.length > 0) {
+                return renderRoutes(childrenRoute, childrenIndex)
+              } else {
+                return renderSingleRoute(childrenRoute, childrenIndex)
+              }
+            })}
+          </Route>
+        )
+      } else {
+        return renderSingleRoute(route, index)
+      }
+    },
+    [authIsAuthenticated]
+  )
 
   return (
-    <Suspense fallback={<>Loading...</>}>
+    <>
       {/* Styles */}
       <GlobalStyle />
 
       {/* Routes */}
-      <Router>
+      <Suspense fallback={<>Loading...</>}>
         <Routes>
           {routes.map((route, index) => renderRoutes(route, index))}
         </Routes>
-      </Router>
-    </Suspense>
+      </Suspense>
+    </>
   )
-}
+})
+
+EntryPoint.displayName = 'EntryPoint'
 
 export { EntryPoint }

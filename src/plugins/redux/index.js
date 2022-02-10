@@ -20,11 +20,8 @@ const sagaMiddleware = createSagaMiddleware()
 
 const middleware = [sagaMiddleware]
 
-const initialState = {}
-
 const store = createStore(
   rootReducers,
-  initialState,
   composeWithDevTools(applyMiddleware(...middleware))
 )
 const persistor = persistStore(store)

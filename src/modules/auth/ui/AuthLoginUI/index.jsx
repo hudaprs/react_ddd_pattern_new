@@ -14,28 +14,46 @@ import { yupResolver } from '@hookform/resolvers/yup'
 // Yup
 import * as yup from 'yup'
 
+// Custom Hook
+import { useAuth } from 'modules/auth/hooks'
+import { useRequestSaver } from 'modules/app/hooks'
+
+// Constant
+import { REQUEST_AUTH_LOGIN } from 'modules/auth/constant'
+import { APP_URL } from 'modules/app/constant'
+
+// React Router DOM
+import { useNavigate } from 'react-router-dom'
+
 // Schema For Form Validation
-const schema = yup
-  .object({
-    email: yup.string().email().required(),
-    password: yup.string().required()
-  })
-  .required()
+const schema = yup.object({
+  email: yup.string().email().required(),
+  password: yup.string().required()
+})
 
 const AuthLoginUI = () => {
   // Hook
+  const { authIsLoading, authLogin } = useAuth()
+  const { requestSaverSetCancelToken } = useRequestSaver()
   const { t } = useTranslation()
-  const { handleSubmit, control } = useForm({ resolver: yupResolver(schema) })
+  const { handleSubmit, control } = useForm({
+    resolver: yupResolver(schema),
+    mode: 'all'
+  })
+  const navigate = useNavigate()
 
   /**
    * @description Handle submit
    *
-   * @return {void} void
+   * @return {Promise<void>} Promise<void>
    */
-  const onSubmit = useCallback((form) => {
-    console.log(form)
+  const onSubmit = useCallback(async (form) => {
+    await authLogin({
+      body: form,
+      requestConfig: { ...requestSaverSetCancelToken(REQUEST_AUTH_LOGIN) }
+    })
 
-    // eslint-disable-next-line
+    navigate(APP_URL.INDEX, { replace: true })
   }, [])
 
   return (
@@ -59,7 +77,9 @@ const AuthLoginUI = () => {
         />
       </div>
 
-      <button type={'submit'}>{t('auth.login.login')}</button>
+      <button type={'submit'} disabled={authIsLoading}>
+        {t('auth.login.login')}
+      </button>
     </form>
   )
 }

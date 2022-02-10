@@ -58,7 +58,7 @@ const FormInput = memo(({ name, control, ...rest }) => {
         {...rest}
       />
 
-      {/* Errors Message */}
+      {/* Error Message */}
       {mapKeyValues()?.[name] && (
         <p className={'error'}>{mapKeyValues()[name]}</p>
       )}

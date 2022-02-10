@@ -13,6 +13,9 @@ import { store, persistor } from 'plugins'
 // Redux Persist
 import { PersistGate } from 'redux-persist/integration/react'
 
+// React Router Dom
+import { BrowserRouter as Router } from 'react-router-dom'
+
 // i18n
 import 'plugins/i18n'
 
@@ -20,7 +23,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={'Loading'} persistor={persistor}>
-        <EntryPoint />
+        <Router>
+          <EntryPoint />
+        </Router>
       </PersistGate>
     </Provider>
   </React.StrictMode>,
